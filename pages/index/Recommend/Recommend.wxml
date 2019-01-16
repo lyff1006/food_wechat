@@ -1,0 +1,19 @@
+<!--pages/index/Recommend/Recommend.wxml-->
+<view class='search_result'>
+  <view class='search-result-text1' wx:if="{{search_data!=null&&list_lengt!=null}}">以下是搜索<text>{{search_data}}</text>的结果,一共<text>{{list_length}}</text>条！</view>
+  <view wx:for="{{food}}" wx:key="{{index}}" class="list2">
+    <navigator url="../../detail/detail?food_id={{item.food_id}}" style="display: inline-block;width: 100%">
+      <view class="list2-img">
+        <image class="all_center_re" mode='widthFix' src='{{item.food_image}}' />
+      </view>
+      <view class="list2-info">
+        <view class="list2-title">
+          <text wx:if="{{item.essence==true}}">精华</text> {{item.food_name}}
+        </view>
+        <view class="list2-text" wx:if="{{item.food_abstract==''}}">暂无介绍</view>
+        <view class="list2-text" wx:else>{{item.food_abstract}}</view>
+      </view>
+    </navigator>
+  </view>
+</view>
+

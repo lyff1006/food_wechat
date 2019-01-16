@@ -1,0 +1,5 @@
+<!--pages/index/BdAudio/BdAudio.wxml-->
+<view>
+<view class='audio-btn' bindtap='GetAudio'>录音
+</view>
+</view>

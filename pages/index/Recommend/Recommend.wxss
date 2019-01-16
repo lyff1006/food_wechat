@@ -1,0 +1,82 @@
+/* pages/index/Recommend/Recommend.wxss */
+/****************搜索结果***************/
+.search_result{
+  margin: 0 5%;
+}
+.search-result-text1{
+  color: #777;
+}
+.search-result-text1 text{
+  color: #f00;
+}
+.Dlist2 {
+  height: 300rpx;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+.list2 {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 30rpx 30rpx;
+  border-bottom: 1px solid #d9d9d9;
+  overflow: hidden;
+  padding: 10rpx;
+}
+
+.list2 image {
+  width: 210rpx;
+  padding: 0px 30rpx 0 10rpx;
+  box-sizing: border-box;
+}
+
+.list2-img {
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  width: 30%;
+  height: 180rpx;
+  overflow: hidden;
+}
+
+.list2-info {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+.list2-title {
+  width: 100%;
+  font-size: 30rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.list2-title text {
+  background: #26a8ff;
+  color: #fff;
+  padding: 2px 3px;
+  font-size: 26rpx;
+  display: inline-block;
+}
+
+.list2-text {
+  position: relative;
+  font-size: 24rpx;
+  color: #9c9c9c;
+  text-indent: 48rpx;
+  line-height: 40rpx;
+  height: 120rpx;
+  overflow: hidden;
+}
+
+.list2-text:after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff 60%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  bottom: 0;
+  content: "";
+  padding: 0 70rpx 40rpx 40rpx;
+  position: absolute;
+  right: 0;
+}

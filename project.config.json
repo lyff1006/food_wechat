@@ -1,0 +1,75 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.0",
+	"appid": "wxa12899939140b05e",
+	"projectname": "food1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 4,
+			"list": [
+				{
+					"id": -1,
+					"name": "FoodList",
+					"pathName": "pages/index/FoodList/FoodList",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "nearby",
+					"pathName": "pages/index/Nearby/Nearby",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "discovery",
+					"pathName": "pages/discovery/discovery",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "BdAudio",
+					"pathName": "pages/index/BdAudio/BdAudio",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "recommend",
+					"pathName": "pages/index/Recommend/Recommend",
+					"query": ""
+				}
+			]
+		}
+	}
+}

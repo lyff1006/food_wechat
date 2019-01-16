@@ -1,0 +1,17 @@
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" show-location="true" markers="{{markers}}" bindmarkertap="makertap"></map>
+</view>
+<view class="map_text">
+  <view class="h1 color-blue">{{textData.name}}</view>
+  <view>{{textData.desc}} <text wx:if="{{textData.rating!=''}}">(距离{{textData.rating}}km)</text></view>
+  <view class='color-red'>{{textData.tel}}</view>
+</view>
+<!--<view class='poisData'>
+  <view wx:for="{{poisData}}" wx:key='index'>
+    <view class='poi-everybody'>
+      <view>{{item.name}}</view>
+        <view>{{item.address}}</view>
+        <view>{{item.tel}}</view>
+    </view>
+  </view>
+</view>-->

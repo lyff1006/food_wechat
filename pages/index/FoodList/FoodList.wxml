@@ -1,0 +1,31 @@
+<view class='scroll-box' style='height:{{ht1}}px;'>
+  <scroll-view scroll-y class='menu-tab' scroll-into-view="{{toView}}" scroll-with-animation="true">
+    <block wx:for="{{tabList}}" wx:key="">
+      <view class='item-tab {{item.checked ? "item-act":""}}' id="t{{index}}" data-index="{{index}}" bindtap='intoTab'>分类{{item.title}}</view>
+    </block>
+  </scroll-view>
+ 
+  <scroll-view scroll-y style='height:{{ht1}}px;overflow: hidden;' 
+    scroll-with-animation="true" 
+    bindscroll="scrollRight" 
+    scroll-into-view="{{toViewRt}}">
+    <block wx:for="{{contList}}" wx:key="">
+      <view class='cont-box' id="t{{index}}" style='height:{{ht}}px;'>
+        <text>分类{{item.cont}}</text>
+        <view wx:for='{{item.info}}' wx:key="index">
+          <navigator url="../list/list?search={{item.index_name}}">
+            <view class="fl_main_list_one" >
+              <view class="fl_main_list_img">
+                <image mode='widthFix' src='{{item.index_img}}'></image>
+              </view>
+              <view class="fl_main_list_text">
+                {{item.index_name}}
+              </view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+    </block>
+  </scroll-view>
+</view>
+<!--bindscrolltoupper="upper" bindscrolltolower="lower" -->

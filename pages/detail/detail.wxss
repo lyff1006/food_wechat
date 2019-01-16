@@ -1,0 +1,111 @@
+/* pages/detail/detail.wxss */
+
+.food-img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.food-img image {
+  margin-top: 1rem;
+  width: 100%;
+  max-height: 800rpx;
+  background-color: #fff;
+}
+
+.list1-food-title {
+  color: #26a8ff;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.list1-list {
+  overflow: hidden;
+  margin: 2rem;
+}
+
+.list1-title {
+  overflow: hidden;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.list1-title image {
+  margin-top: 12rpx;
+  width: 40rpx;
+  height: 40rpx;
+  float: left;
+}
+
+.list1-title text {
+  color: #26a8ff;
+  font-size: 1.2rem;
+  margin-left:20rpx;
+}
+
+.list1-info1 fieldset {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem ;
+  color: #606060;
+  margin: 1rem 0rem;
+  display: block;
+  font-size: 15px;
+}
+
+.list1-info1 legend {
+  font-size: 1.2rem;
+  color: #26a8ff;
+}
+
+.list1-info1 text {
+  margin: 0rpx 50rpx;
+  font-size: 0.7rem;
+  color: #8c8c8c;
+}
+
+.list1-info2 {
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  padding: 8px;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.list1-info2 image {
+  float: left;
+  padding-right: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.step-text {
+  color: #8c8c8c;
+  float: left;
+  text-indent: 2em;
+}
+
+.step-num {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #26a8ff;
+  text-align: center;
+  color: #fff;
+  float: left;
+}
+
+.tips-text {
+  color: #8c8c8c;
+}
+
+.tag li {
+  border: 1px solid #26a8ff;
+  border-radius: 5px;
+  float: left;
+  padding: 3px 10px;
+  list-style: none;
+  margin: 5px;
+  color: #26a8ff;
+}

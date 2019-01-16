@@ -1,0 +1,50 @@
+<!--index.wxml-->
+
+<view>
+  <!--轮播-->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+    <block wx:for="{{ImgBox}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item}}" class="swiper_image" mode="aspectFill" id='index' />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!--九宫格-->
+<view style='height:30rpx;'></view>
+<view class="squared-paper">
+  <view wx:for="{{IconArray1}}" wx:key="index" class="sp-list">
+    <navigator url="{{item.path}}?class={{item.name}}">
+      <view class="sp-list-one left_center_re">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="sp-list-font">{{item.name}}</view>
+    </navigator>
+  </view>
+</view>
+<view style='height:30rpx;'></view>
+<view class="squared-paper">
+  <view wx:for="{{IconArray2}}" wx:key="index" class="sp-list">
+    <navigator url="{{item.path}}?class={{item.name}}">
+      <view class="sp-list-one left_center_re">
+        <image src="{{item.img}}"></image>
+      </view>
+      <view class="sp-list-font">{{item.name}}</view>
+    </navigator>
+  </view>
+</view>
+<view style="margin: 1rem;font-size: 1.4rem;font-weight: bold;text-align:center;">- 猜你喜欢 -</view>
+<view wx:for="{{food}}" wx:key="index" class="list2">
+  <navigator url="../detail/detail?food_id={{item.food_id}}" style="display: inline-block;width: 100%">
+    <view class="list2-img">
+      <image class="all_center_re" mode='widthFix' src='{{item.food_image}}' />
+    </view>
+    <view class="list2-info">
+      <view class="list2-title">
+        <text wx:if="{{item.essence==true}}">精华</text> {{item.food_name}}
+      </view>
+      <view class="list2-text" wx:if="{{item.food_abstract==''}}">暂无介绍</view>
+      <view class="list2-text" wx:else>{{item.food_abstract}}</view>
+    </view>
+  </navigator>
+</view>

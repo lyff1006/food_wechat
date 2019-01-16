@@ -1,0 +1,62 @@
+<!--pages/detail/detail.wxml-->
+<view>
+  <view class="food-img">
+    <image mode='widthFix' src="{{detail.food_image}}" />
+  </view>
+  <view class="list1-list">
+    <view class="list1-food-title">{{detail.food_name}}</view>
+    <view wx:if="{{food.food_abstract!=''}}">
+      <view class="list1-title">
+        <image src="http://images.weblyff.cn/圆.png" />
+        <text>介绍</text>
+      </view>
+      <view class="tips-text"></view>
+      <view class="list1-info1">
+        <fieldset>
+          <legend>{{detail.food_name}}</legend>
+          <ul>
+            <li style="list-style: none;">{{food.food_abstract}}</li>
+          </ul>
+        </fieldset>
+      </view>
+    </view>
+    <view class="list1-title">
+      <image src="http://images.weblyff.cn/圆.png" />
+      <text>食材明细</text>
+    </view>
+    <view class="list1-info1">
+      <fieldset>
+        <legend>主料</legend>
+        <view wx:for="{{food.main_material}}" wx:key="index">
+          <li>{{item[0]}}
+            <text>{{item[1]}}</text>
+          </li>
+        </view>
+      </fieldset>
+      <fieldset>
+        <legend>辅料</legend>
+        <view wx:for="{{food.sup_material}}" wx:key="index">
+          <li>{{item[0]}}
+            <text>{{item[1]}}</text>
+          </li>
+        </view>
+      </fieldset>
+    </view>
+
+    <view class="list1-title">
+      <image src="http://images.weblyff.cn/圆.png" />
+      <text>做法步骤</text>
+    </view>
+    <view class="list1-info2" wx:for="{{food.food_step}}" wx:key="index" style="box-sizing: border-box;">
+      <image mode='widthFix' src="{{item[1]}}" />
+      <view>
+        <view class="step-text">{{item[0]}}</view>
+      </view>
+    </view>
+    <view class="list1-title">
+      <image src="http://images.weblyff.cn/圆.png" />
+      <text>提示</text>
+    </view>
+    <view class="tips-text">{{food.food_tips}}</view>
+  </view>
+</view>

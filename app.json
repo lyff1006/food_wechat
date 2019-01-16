@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index/list/list",
+    "pages/index/FoodList/FoodList",
+    "pages/index/FoodVideo/FoodVideo",
+    "pages/index/New/New",
+    "pages/index/Recommend/Recommend",
+    "pages/index/BdImage/BdImage",
+    "pages/index/BdAudio/BdAudio",
+    "pages/index/Nearby/Nearby",
+    "pages/index/Knowledge/Knowledge",
+    "pages/logs/logs",
+    "pages/detail/detail",
+    "pages/discovery/discovery",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "小馋嘴美食",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#007AFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/home1.png",
+        "selectedIconPath": "images/home2.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现",
+        "iconPath": "images/discovery1.png",
+        "selectedIconPath": "images/discovery2.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "images/about1.png",
+        "selectedIconPath": "images/about2.png"
+      }
+    ]
+  }
+}

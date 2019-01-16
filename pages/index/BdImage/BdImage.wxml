@@ -1,0 +1,37 @@
+<!--pages/index/BdImage/BdImage.wxml-->
+<view class='ab_center_horizon'>
+  <view class="shoot-image">
+    <image class="all_center_re" mode="widthFix" src="{{img_src}}"></image>
+  </view>
+  <view>
+    <view>
+      <view class="img-file" bindtap='ChooseImg'>
+        更换图片
+      </view>
+    </view>
+    <view>
+      <view class="shoot-imgbtn" bindtap='UploadImg'>识别图片</view>
+    </view>
+  </view>
+  <view style="height: 3rem"></view>
+  <view class="shoot-result">
+    <view class="shoot-result-text">识别结果</view>
+    <view class="shoot-result-text1">以下是可信度最高的
+      <span>{{length_res}}</span>条结果</view>
+    <view class="shoot-result-body" wx:for="{{img_res}}" wx:key="index">
+      <view class="shoot-result-info">
+        <view class="shoot-result-title">{{item.food_name}}</view>
+        <view class="shoot-result-confidence">可信度：{{item.food_probability}}%</view>
+        <router-link :to="{path:'/Searchlist', query:{search:item.food_name}}">
+          <span class="shoot-result-search" bindtap='Search' data-name='{{item.food_name}}'>搜索</span>
+        </router-link>
+      </view>
+      <view wx:if="{{item.food_description!=null}}" class="shoot-result-description">
+        {{item.food_description}}
+      </view>
+      <view wx:else class="shoot-result-description">
+        暂无介绍！
+      </view>
+    </view>
+  </view>
+</view>

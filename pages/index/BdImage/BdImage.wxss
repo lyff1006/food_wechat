@@ -1,0 +1,153 @@
+/* pages/index/BdImage/BdImage.wxss */
+
+.shoot-image {
+  width: 18rem;
+  height: 18rem;
+  overflow: hidden;
+  border: 1px solid #c9c9c9;
+  box-shadow: 2px 2px 5px #888;
+}
+
+.shoot-image image {
+  width: 100%;
+}
+
+.change-imgbtn {
+  width: 100%;
+  max-width: 18rem;
+  box-sizing: border-box;
+  text-align: center;
+  background: #26a8ff;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.6rem;
+  border: 1px solid #26a8ff;
+  border-radius: 3rem;
+  padding: 0.2rem 2rem;
+  margin: 1rem 0;
+}
+
+.shoot-imgbtn {
+  width: 100%;
+  max-width: 18rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #26a8ff;
+  display: inline-block;
+  font-size: 1.6rem;
+  border: 1px solid #26a8ff;
+  border-radius: 3rem;
+  padding: 0.2rem 2rem;
+  margin: 1rem 0;
+}
+
+.shoot-result {
+  margin: 1rem 5%;
+  border: 1px solid #c9c9c9;
+  min-height: 20rem;
+  border-radius: 10px;
+  box-shadow: 3px 5px 5px #888;
+  padding: 0.5rem;
+}
+
+.img-file {
+  position: relative;
+  cursor: pointer;
+  width: 100%;
+  max-width: 18rem;
+  box-sizing: border-box;
+  text-align: center;
+  background: #26a8ff;
+  color: #fff;
+  font-size: 1.6rem;
+  border: 1px solid #26a8ff;
+  border-radius: 3rem;
+  padding: 0.2rem 2rem;
+  margin: 1rem 0;
+  overflow: hidden;
+  display: inline-block;
+  /**display: inline;
+  *zoom: 1;*/
+}
+
+.img-file input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  width: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+  outline: none;
+}
+
+.shoot-result-text {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #000;
+  margin: 0.5rem 0;
+}
+
+.shoot-result-text1 {
+  font-size: 0.8rem;
+  color: #777;
+  margin: 0.5rem;
+}
+
+.shoot-result-text1 span {
+  color: #f00;
+  font-size: 0.8rem;
+}
+
+.shoot-result {
+  box-sizing: border-box;
+}
+
+.shoot-result-body {
+  overflow: hidden;
+  border-top: 1px solid #c9c9c9;
+  padding: 1rem 0.5rem;
+  height: 8rem;
+}
+
+.shoot-result-body img {
+  width: 50%;
+  float: left;
+}
+
+.shoot-result-info {
+  width: 50%;
+  float: left;
+  padding: 0.2rem 1rem;
+  box-sizing: border-box;
+}
+
+.shoot-result-title {
+  font-size: 45rpx;
+  color: #26a8ff;
+}
+
+.shoot-result-confidence {
+  margin: 20rpx 0;
+  font-size:36rpx;
+}
+
+.shoot-result-search {
+  color: #fff;
+  background: #26a8ff;
+  padding: 0.1rem 1rem;
+  border-radius: 3rem;
+}
+
+.shoot-result-description {
+  width: 50%;
+  float: left;
+  overflow-y: scroll;
+  color: #c9c9c9;
+  height: 100%;
+  font-size:32rpx;
+  text-indent: 64rpx;
+}
